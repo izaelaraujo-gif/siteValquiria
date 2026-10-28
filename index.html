@@ -91,7 +91,7 @@ th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left}th{ba
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
 <script>
 // 1) Cole aqui os dados do seu projeto Supabase (Project Settings > API)
-const SB_URL= yslnkzogrvudczrsntyd, SB_KEY=us-east-1;
+const SB_URL= 'yslnkzogrvudczrsntyd', SB_KEY='us-east-1';
 const ON=!SB_URL.startsWith('COLE'), sb=ON?supabase.createClient(SB_URL,SB_KEY):null;
 const $=s=>document.querySelector(s), brl=n=>(+n||0).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
