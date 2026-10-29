@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Valquíria Araújo - Especialista em Alisamentos</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff5f8;--soft:#fbd3e1;--pink:#e0467f;--deep:#a3235a;--ink:#3b1428;--card:#fff;--line:#f3bcd1}
+*{box-sizing:border-box;margin:0}
+body{font:400 16px/1.6 Jost,sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;line-height:1.1}
+h2{font-size:clamp(30px,5vw,44px);color:var(--deep);margin-bottom:20px}
+a{color:inherit}
+header{position:sticky;top:0;z-index:5;background:#fff5f8ee;backdrop-filter:blur(8px);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:12px 5vw;gap:12px;flex-wrap:wrap}
+header b{font:700 22px 'Cormorant Garamond',serif;color:var(--deep)}
+nav{display:flex;gap:18px;font-size:15px}nav a{text-decoration:none}nav a:hover{color:var(--pink)}
+section{padding:64px 5vw;max-width:1100px;margin:auto}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-top:48px}
+.hero h1{font-size:clamp(42px,7vw,76px);color:var(--deep)}
+.hero p{margin:18px 0 26px;max-width:46ch;font-size:18px}
+.hero img{width:100%;border-radius:200px 200px 24px 24px;box-shadow:16px 16px 0 var(--soft);display:block;aspect-ratio:3/4;object-fit:cover}
+.btn{display:inline-block;border:0;cursor:pointer;font:500 16px Jost,sans-serif;padding:12px 24px;border-radius:40px;background:var(--pink);color:#fff;text-decoration:none}
+.btn:hover{background:var(--deep)}.btn.alt{background:#fff;color:var(--deep);border:1.5px solid var(--pink)}.btn.sm{padding:6px 14px;font-size:14px}
+.btn.wa{background:#1fa855}.btn.ig{background:linear-gradient(45deg,#f09433,#dc2743,#bc1888)}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.card h3{font-size:26px;color:var(--deep);margin-bottom:10px}
+.price{display:flex;justify-content:space-between;gap:8px;padding:5px 0;border-bottom:1px dashed var(--line)}.price:last-child{border:0}
+.price small{color:#8a5a70}
+label{display:block;font-size:14px;margin:12px 0 4px}
+input,select,textarea{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font:inherit;background:#fff;color:var(--ink)}
+:focus-visible{outline:3px solid var(--pink);outline-offset:2px}
+.form{max-width:520px}
+.msg{margin-top:14px;padding:12px;border-radius:10px;background:var(--soft)}
+.slots{display:flex;flex-wrap:wrap;gap:8px}.slots button{padding:8px 14px;border-radius:20px;border:1px solid var(--pink);background:#fff;cursor:pointer;font:inherit}
+.slots button.on{background:var(--pink);color:#fff}.slots button:disabled{opacity:.35;cursor:not-allowed;text-decoration:line-through}
+footer{background:var(--deep);color:#ffe3ee;text-align:center;padding:28px 5vw}
+.float{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:10px;z-index:6}
+#adm{padding:20px 5vw;max-width:1200px;margin:auto}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.tabs button.on{background:var(--deep)}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;font-size:14px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left}th{background:var(--soft)}
+.tbl{overflow-x:auto;margin:10px 0 24px}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:12px 0}
+.kpi div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px}.kpi b{display:block;font:700 26px 'Cormorant Garamond',serif;color:var(--deep)}
+.neg{color:#c0262d}.pos{color:#1b7f46}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.hero img{order:-1;max-width:340px;margin:auto}nav{display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div id="site">
+<header><b>Valquíria Araújo</b><nav><a href="#servicos">Procedimentos</a><a href="#agendar">Agendar</a><a href="#local">Onde estamos</a><a href="#admin">Área da Valquíria</a></nav></header>
+
+<section class="hero">
+ <div>
+  <h1>Cabelos alinhados, brilho de verdade.</h1>
+  <p>Valquíria Araújo, especialista em alisamentos. Botox, progressiva, escova, hidratação e tintura em um atendimento cuidadoso, na zona leste de São Paulo.</p>
+  <div class="row"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/5511932075557?text=Ol%C3%A1%20Valqu%C3%ADria!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio.">Agendar pelo WhatsApp</a><a class="btn alt" href="#servicos">Ver preços</a></div>
+ </div>
+ <img src="foto-valquiria.jpg" alt="Valquíria Araújo segurando secador e chapinha">
+</section>
+
+<section id="servicos"><h2>Procedimentos e valores</h2><div id="lista" class="grid"></div>
+<p style="margin-top:16px;color:#8a5a70">Cabelo curto, médio ou longo: o valor muda conforme o comprimento. Dúvida? Chame no WhatsApp.</p></section>
+
+<section id="agendar"><h2>Como agendar</h2><div class="card form"><p>Os horários são marcados direto com a Valquíria pelo WhatsApp. Mande uma mensagem com o procedimento e o melhor dia e horário para você.</p><p style="margin-top:16px"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/5511932075557?text=Ol%C3%A1%20Valqu%C3%ADria!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio.">Agendar pelo WhatsApp</a></p></div></section>
+
+<section id="local"><h2>Onde estamos</h2>
+<div class="grid">
+ <div class="card"><h3>Endereço</h3><p>Av. Sapopemba, 7702<br>Jardim Adutora, São Paulo - SP<br>CEP 03988-000</p><p style="margin-top:12px"><a class="btn sm alt" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Av.+Sapopemba+7702+Jardim+Adutora+São+Paulo">Abrir no mapa</a></p></div>
+ <div class="card"><h3>Fale com a Valquíria</h3><div class="row"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/5511932075557">WhatsApp</a><a class="btn ig" target="_blank" rel="noopener" href="https://www.instagram.com/valquiria_araujo_alisamentos?srtk=M3I2MjY2MjN4bHBs">Instagram</a></div><p style="margin-top:12px">(11) 93207-5557</p></div>
+</div></section>
+<footer>Valquíria Araújo - Especialista em Alisamentos<br>Criado por Izael Araújo 2026</footer>
+<div class="float"><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/5511932075557">WhatsApp</a><a class="btn ig" target="_blank" rel="noopener" href="https://www.instagram.com/valquiria_araujo_alisamentos?srtk=M3I2MjY2MjN4bHBs">Instagram</a></div>
+</div>
+
+<div id="adm" hidden></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+<script>
+// 1) Cole aqui os dados do seu projeto Supabase (Project Settings > API)
+const SB_URL='COLE_AQUI_A_URL', SB_KEY='COLE_AQUI_A_CHAVE_ANON';
+const ON=!SB_URL.startsWith('COLE'), sb=ON?supabase.createClient(SB_URL,SB_KEY):null;
+const $=s=>document.querySelector(s), brl=n=>(+n||0).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const hoje=()=>new Date(Date.now()-new Date().getTimezoneOffset()*6e4).toISOString().slice(0,10);
+const DEF=[['Botox',110,160,190],['Progressiva',130,170,210],['Tintura + Escova',65,75,100],['Escova + Chapinha',40,50,70],['Hidratação + Escova',45,65,90],['Cronograma Capilar (3 sessões)',105,180,240]]
+ .flatMap(([g,...p])=>['Curto','Médio','Longo'].map((t,i)=>({grupo:g,tamanho:t,preco:p[i],obs:g=='Progressiva'&&i==2?'a partir de':''})))
+ .concat([{grupo:'Corte',tamanho:'',preco:30,obs:''},{grupo:'Aplicação de tintura',tamanho:'',preco:25,obs:'a partir de'}]);
+let SERV=DEF;
+const label=s=>s.grupo+(s.tamanho?' - '+s.tamanho:'');
+
+async function loadServ(){
+ if(ON){const{data}=await sb.from('servicos').select('*').eq('ativo',true).order('ordem').order('id');if(data&&data.length)SERV=data}
+ const g={};SERV.forEach(s=>(g[s.grupo]??=[]).push(s));
+ $('#lista').innerHTML=Object.entries(g).map(([n,a])=>`<div class="card"><h3>${esc(n)}</h3>${a.map(s=>`<div class="price"><span>${esc(s.tamanho)||'Valor'}</span><span>${s.obs=='a partir de'?'<small>a partir de</small> ':''}${s.preco==null?'':brl(s.preco)}${s.obs=='sob consulta'?'<small>sob consulta</small>':''}</span></div>`).join('')}</div>`).join('');
+}
+loadServ();
+
+/* ---------- ÁREA DA VALQUÍRIA (#admin) ---------- */
+const A=$('#adm');let tab='agenda',CL=[];
+function route(){const a=location.hash=='#admin';$('#site').hidden=a;A.hidden=!a;if(a)adminInit()}
+addEventListener('hashchange',route);route();
+async function adminInit(){
+ if(!ON){A.innerHTML='<h2>Área da Valquíria</h2><p>Conecte o Supabase no topo do arquivo index.html para usar esta área.</p><p><a href="#">Voltar ao site</a></p>';return}
+ const{data:{session}}=await sb.auth.getSession();
+ if(!session){A.innerHTML=`<h2>Área da Valquíria</h2><div class="form card"><label>E-mail<input id="l_e" type="email"></label><label>Senha<input id="l_s" type="password"></label><p style="margin-top:14px"><button class="btn" id="l_ok">Entrar</button> <a href="#">Voltar ao site</a></p><div id="l_m"></div></div>`;
+  $('#l_ok').onclick=async()=>{const{error}=await sb.auth.signInWithPassword({email:$('#l_e').value,password:$('#l_s').value});error?$('#l_m').innerHTML='<div class="msg">E-mail ou senha incorretos.</div>':adminInit()};return}
+ CL=(await sb.from('clientes').select('*').order('nome')).data||[];
+ A.innerHTML=`<div class="row" style="justify-content:space-between;align-items:center"><h2 style="margin:0">Painel da Valquíria</h2><div class="row"><a class="btn sm alt" href="#">Ver site</a><button class="btn sm" id="sair">Sair</button></div></div>
+ <div class="tabs">${[['agenda','Agenda'],['clientes','Clientes'],['servicos','Procedimentos'],['caixa','Caixa'],['orc','Orçamentos']].map(([k,n])=>`<button class="btn sm ${k==tab?'on':''}" data-t="${k}">${n}</button>`).join('')}</div><div id="tab"></div>`;
+ $('#sair').onclick=async()=>{await sb.auth.signOut();adminInit()};
+ A.querySelector('.tabs').onclick=e=>{if(e.target.dataset.t){tab=e.target.dataset.t;adminInit()}};
+ ({agenda:tAgenda,clientes:tClientes,servicos:tServ,caixa:tCaixa,orc:tOrc})[tab]();
+}
+const cliOpts=()=>'<option value="">(sem cliente)</option>'+CL.map(c=>`<option value="${c.id}">${esc(c.nome)}</option>`).join('');
+const wa=n=>'https://wa.me/55'+String(n).replace(/\D/g,'');
+const HR=[];for(let h=7;h<22;h++)['00','15','30','45'].forEach(m=>HR.push(String(h).padStart(2,'0')+':'+m));
+async function tAgenda(){
+ const{data}=await sb.from('agendamentos').select('*,clientes(nome,whatsapp)').gte('data',hoje()).order('data').order('hora');
+ $('#tab').innerHTML=`<div class="card form"><h3>Novo agendamento</h3><label>Cliente<select id="g_c"><option value="">Escolha a cliente</option>${CL.map(c=>`<option value="${c.id}">${esc(c.nome)}</option>`).join('')}</select></label><label>Procedimento<select id="g_s">${SERV.map(s=>`<option>${esc(label(s))}</option>`).join('')}</select></label><label>Dia<input id="g_d" type="date" value="${hoje()}"></label><label>Horário (de 15 em 15 minutos)<select id="g_h">${HR.map(h=>`<option ${h=='09:00'?'selected':''}>${h}</option>`).join('')}</select></label><p style="margin-top:12px"><button class="btn sm" id="g_ok">Agendar</button></p></div>
+ <div class="tbl"><table><tr><th>Data</th><th>Hora</th><th>Cliente</th><th>Procedimento</th><th>Status</th><th></th></tr>${(data||[]).map(a=>`<tr><td>${a.data.split('-').reverse().join('/')}</td><td>${a.hora}</td><td>${esc(a.clientes?.nome)} <a href="${wa(a.clientes?.whatsapp)}" target="_blank">WhatsApp</a></td><td>${esc(a.servico)}</td><td><select data-id="${a.id}">${['agendado','concluído','cancelado'].map(x=>`<option ${x==a.status?'selected':''}>${x}</option>`).join('')}</select></td><td><button class="btn sm alt" data-del="${a.id}">Excluir</button></td></tr>`).join('')||'<tr><td colspan=6>Nenhum agendamento futuro.</td></tr>'}</table></div>`;
+ $('#g_ok').onclick=async()=>{const c=$('#g_c').value,d=$('#g_d').value,h=$('#g_h').value;if(!c||!d)return alert('Escolha a cliente e o dia.');
+  if((data||[]).some(a=>a.data==d&&a.hora==h&&a.status!='cancelado'))return alert('Já existe um agendamento nesse dia e horário.');
+  const{error}=await sb.from('agendamentos').insert({cliente_id:c,servico:$('#g_s').value,data:d,hora:h});error?alert(error.message):adminInit()};
+ $('#tab').onchange=async e=>{if(e.target.dataset.id)await sb.from('agendamentos').update({status:e.target.value}).eq('id',e.target.dataset.id)};
+ $('#tab').onclick=async e=>{const id=e.target.dataset.del;if(id&&confirm('Excluir este agendamento?')){await sb.from('agendamentos').delete().eq('id',id);adminInit()}};
+}
+let GR;
+function iso(x){return new Date(x-x.getTimezoneOffset()*6e4).toISOString().slice(0,10)}
+function grafico(L){
+ const m=$('#gp').value=='m',n=m?6:30,k=[],d=new Date();
+ for(let i=n-1;i>=0;i--){const x=new Date(d);m?x.setMonth(d.getMonth()-i,1):x.setDate(d.getDate()-i);k.push(m?iso(x).slice(0,7):iso(x))}
+ const E=k.map(()=>0),S=k.map(()=>0);
+ L.filter(l=>l.pago).forEach(l=>{const i=k.indexOf(m?l.data.slice(0,7):l.data);if(i<0)return;l.tipo=='entrada'?E[i]+=+l.valor:S[i]+=+l.valor});
+ GR?.destroy();
+ GR=new Chart($('#gr'),{type:'bar',data:{labels:k.map(x=>m?x.slice(5)+'/'+x.slice(2,4):x.slice(8)+'/'+x.slice(5,7)),datasets:[{label:'Entradas',data:E,backgroundColor:'#e0467f'},{label:'Saídas',data:S,backgroundColor:'#b9a3ae'},{type:'line',label:'Saldo',data:E.map((v,i)=>v-S[i]),borderColor:'#a3235a',tension:.3}]},options:{responsive:true}});
+}
+async function relatorio(t){
+ const a=$('#r_a').value,b=$('#r_b').value;if(!a||!b||a>b)return alert('Escolha um período válido.');
+ const{data}=await sb.from('lancamentos').select('*,clientes(nome)').gte('data',a).lte('data',b).order('data');const L=data||[];
+ const br=d=>d.split('-').reverse().join('/'),sum=f=>L.filter(f).reduce((s,l)=>s+ +l.valor,0);
+ const e=sum(l=>l.tipo=='entrada'&&l.pago),s=sum(l=>l.tipo=='saida'&&l.pago),r=sum(l=>l.tipo=='entrada'&&!l.pago),dev={};
+ L.filter(l=>l.tipo=='entrada'&&!l.pago).forEach(l=>{const n=l.clientes?.nome||'Sem cliente';dev[n]=(dev[n]||0)+ +l.valor});
+ const D=Object.entries(dev).map(([n,v])=>`- ${n}: ${brl(v)}`);
+ const T=['Valquíria Araújo - Especialista em Alisamentos',`Relatório financeiro: ${br(a)} a ${br(b)}`,'',`Entradas recebidas: ${brl(e)}`,`Saídas pagas: ${brl(s)}`,`Saldo: ${brl(e-s)}`,`A receber: ${brl(r)}`,'','Devedoras:',...(D.length?D:['(nenhuma)']),'','Movimentações:',...(L.length?L.map(l=>`${br(l.data)} | ${l.tipo=='entrada'?'Entrada':'Saída'} | ${l.clientes?.nome||'-'} | ${l.descricao||''} | ${brl(l.valor)} | ${l.pago?'pago':'pendente'}`):['(nenhuma no período)'])].map(x=>x.replace(/\u00a0/g,' '));
+ const nome=`relatorio-${a}-a-${b}`;
+ if(t=='txt'){const u=URL.createObjectURL(new Blob([T.join('\n')],{type:'text/plain;charset=utf-8'})),x=document.createElement('a');x.href=u;x.download=nome+'.txt';x.click();URL.revokeObjectURL(u);return}
+ const doc=new jspdf.jsPDF();let y=16;doc.setFontSize(11);
+ T.forEach((l,i)=>{doc.setFont('helvetica',i<2?'bold':'normal');doc.splitTextToSize(l,180).forEach(p=>{if(y>280){doc.addPage();y=16}doc.text(p,15,y);y+=6})});
+ doc.save(nome+'.pdf');
+}
+async function hist(id){
+ const[ag,la,fo]=await Promise.all([sb.from('agendamentos').select('*').eq('cliente_id',id).order('data',{ascending:false}),sb.from('lancamentos').select('*').eq('cliente_id',id).order('data',{ascending:false}),sb.from('fotos').select('*').eq('cliente_id',id).order('id',{ascending:false})]);
+ const F=fo.data||[],U=F.length?(await sb.storage.from('fotos-clientes').createSignedUrls(F.map(f=>f.path),3600)).data||[]:[];
+ const c=CL.find(x=>x.id==id),tot=(la.data||[]).filter(l=>l.tipo=='entrada'&&l.pago).reduce((s,l)=>s+ +l.valor,0);
+ $('#hist').innerHTML=`<h3>Histórico de ${esc(c.nome)} (total pago: ${brl(tot)})</h3><div class="tbl"><table><tr><th>Data</th><th>Item</th><th>Valor/Status</th></tr>${(ag.data||[]).map(a=>`<tr><td>${a.data}</td><td>${esc(a.servico)} às ${a.hora}</td><td>${a.status}</td></tr>`).join('')}${(la.data||[]).map(l=>`<tr><td>${l.data}</td><td>${esc(l.descricao)}</td><td>${brl(l.valor)} ${l.pago?'pago':'<b class="neg">devendo</b>'}</td></tr>`).join('')}</table></div>
+ <h3>Fotos dos cabelos</h3><div class="card form"><label>Escolher fotos<input id="f_f" type="file" accept="image/*" multiple></label><label>Legenda (opcional)<input id="f_l" placeholder="Ex.: antes da progressiva"></label><p style="margin-top:12px"><button class="btn sm" id="f_ok">Enviar fotos</button></p></div>
+ <div class="grid" style="margin-top:16px">${F.map((f,i)=>`<div class="card"><img src="${esc(U[i]?.signedUrl)}" alt="Foto do cabelo" style="width:100%;border-radius:10px"><p><small>${f.created_at.slice(0,10).split('-').reverse().join('/')} ${esc(f.legenda)}</small></p><button class="btn sm alt" data-fx="${f.id}" data-p="${esc(f.path)}" data-cid="${id}">Excluir</button></div>`).join('')||'<p>Nenhuma foto ainda.</p>'}</div>`;
+ $('#f_ok').onclick=async()=>{const fs=[...$('#f_f').files];if(!fs.length)return alert('Escolha ao menos uma foto.');$('#f_ok').disabled=true;
+  for(const [i,f] of fs.entries()){const path=`${id}/${Date.now()}-${i}.${(f.name.split('.').pop()||'jpg').replace(/[^a-z0-9]/gi,'')}`;
+   const up=await sb.storage.from('fotos-clientes').upload(path,f,{contentType:f.type});if(up.error){alert(up.error.message);break}
+   await sb.from('fotos').insert({cliente_id:id,path,legenda:$('#f_l').value})}
+  hist(id)};
+}
+async function tClientes(){
+ $('#tab').innerHTML=`<div class="card form"><h3>Nova cliente</h3><label>Nome<input id="c_n"></label><label>WhatsApp (com DDD)<input id="c_w" inputmode="tel"></label><p style="margin-top:12px"><button class="btn sm" id="c_ok">Cadastrar</button></p></div>
+ <div class="tbl"><table><tr><th>Nome</th><th>WhatsApp</th><th></th></tr>${CL.map(c=>`<tr><td>${esc(c.nome)}</td><td><a href="${wa(c.whatsapp)}" target="_blank">${esc(c.whatsapp)}</a></td><td><button class="btn sm alt" data-h="${c.id}">Histórico e fotos</button> <button class="btn sm alt" data-del="${c.id}">Excluir</button></td></tr>`).join('')||'<tr><td colspan=3>Nenhuma cliente cadastrada.</td></tr>'}</table></div><div id="hist"></div>`;
+ $('#c_ok').onclick=async()=>{const n=$('#c_n').value.trim(),w=$('#c_w').value.replace(/\D/g,'');if(!n||w.length<10)return alert('Informe o nome e o WhatsApp com DDD.');const{error}=await sb.from('clientes').insert({nome:n,whatsapp:w});error?alert(error.message):adminInit()};
+ $('#tab').onclick=async e=>{const b=e.target.dataset;
+  if(b.h)return hist(b.h);
+  if(b.del){const c=CL.find(x=>x.id==b.del);if(!confirm(`Excluir ${c.nome}? Os agendamentos e as fotos dela serão apagados. O dinheiro já lançado continua no caixa.`))return;
+   const{data}=await sb.from('fotos').select('path').eq('cliente_id',c.id);if(data?.length)await sb.storage.from('fotos-clientes').remove(data.map(f=>f.path));
+   const{error}=await sb.from('clientes').delete().eq('id',c.id);error?alert(error.message):adminInit()}
+  if(b.fx&&confirm('Excluir esta foto?')){await sb.storage.from('fotos-clientes').remove([b.p]);await sb.from('fotos').delete().eq('id',b.fx);hist(b.cid)}};
+}
+async function tServ(){
+ const{data}=await sb.from('servicos').select('*').order('ordem').order('id');
+ $('#tab').innerHTML=`<p>Altere os valores e clique em Salvar. Para esconder do site, desmarque “No site”.</p><div class="tbl"><table><tr><th>Procedimento</th><th>Tamanho</th><th>Preço</th><th>Tipo de preço</th><th>No site</th><th></th></tr>${(data||[]).concat([{id:'',grupo:'',tamanho:'',preco:'',obs:'',ativo:true}]).map(s=>`<tr data-id="${s.id}"><td><input value="${esc(s.grupo)}"></td><td><input value="${esc(s.tamanho)}"></td><td><input type="number" step="0.01" value="${s.preco??''}"></td><td><select>${[['','Valor'],['a partir de','A partir de R$'],['sob consulta','Sob consulta']].map(([v,n])=>`<option value="${v}" ${v==(s.obs||'')?'selected':''}>${n}</option>`).join('')}</select></td><td><input type="checkbox" ${s.ativo?'checked':''}></td><td><button class="btn sm">${s.id?'Salvar':'Adicionar'}</button> ${s.id?'<button class="btn sm alt" data-del="1">Excluir</button>':''}</td></tr>`).join('')}</table></div>`;
+ $('#tab').onclick=async e=>{const tr=e.target.closest('tr');if(e.target.tagName!='BUTTON'||!tr)return;const id=tr.dataset.id,i=tr.querySelectorAll('input');
+  if(e.target.dataset.del){if(confirm('Excluir este procedimento?')){await sb.from('servicos').delete().eq('id',id);adminInit()}return}
+  const row={grupo:i[0].value.trim(),tamanho:i[1].value.trim(),preco:i[2].value===''?null:+i[2].value,obs:tr.querySelector('select').value,ativo:i[3].checked};if(!row.grupo)return alert('Informe o nome do procedimento.');
+  const{error}=id?await sb.from('servicos').update(row).eq('id',id):await sb.from('servicos').insert({...row,ordem:99});error?alert(error.message):adminInit()};
+}
+async function tCaixa(){
+ const{data}=await sb.from('lancamentos').select('*,clientes(nome)').order('data',{ascending:false}).order('id',{ascending:false});const L=data||[];
+ const h=hoje(),d=new Date(h+'T12:00'),seg=new Date(d);seg.setDate(d.getDate()-((d.getDay()+6)%7));const sw=seg.toISOString().slice(0,10),mes=h.slice(0,7);
+ const soma=f=>{let e=0,s=0;L.filter(l=>l.pago&&f(l)).forEach(l=>l.tipo=='entrada'?e+=+l.valor:s+=+l.valor);return`<b class="${e-s<0?'neg':'pos'}">${brl(e-s)}</b>entrou ${brl(e)} · saiu ${brl(s)}`};
+ const dev={},rec={};CL.forEach(c=>rec[c.id]={n:c.nome,v:0});
+ L.filter(l=>l.tipo=='entrada'&&l.cliente_id).forEach(l=>{if(!l.pago){dev[l.cliente_id]=dev[l.cliente_id]||{n:l.clientes?.nome,v:0};dev[l.cliente_id].v+=+l.valor}else if(rec[l.cliente_id])rec[l.cliente_id].v+=+l.valor});
+ const rk=Object.values(rec).sort((a,b)=>b.v-a.v),tb=(a)=>`<table>${a.map(x=>`<tr><td>${esc(x.n)}</td><td>${brl(x.v)}</td></tr>`).join('')||'<tr><td>Sem dados</td></tr>'}</table>`;
+ $('#tab').innerHTML=`<div class="kpi"><div>Hoje${soma(l=>l.data==h)}</div><div>Esta semana${soma(l=>l.data>=sw)}</div><div>Este mês${soma(l=>l.data.startsWith(mes))}</div></div>
+ <div class="card"><div class="row" style="justify-content:space-between;align-items:center"><h3>Gráfico do caixa</h3><select id="gp" style="width:auto"><option value="d">Últimos 30 dias</option><option value="m">Últimos 6 meses</option></select></div><canvas id="gr" height="120"></canvas></div>
+ <div class="card form" style="margin-top:16px"><h3>Relatório de qualquer período</h3><label>De<input id="r_a" type="date" value="${mes}-01"></label><label>Até<input id="r_b" type="date" value="${h}"></label><div class="row" style="margin-top:12px"><button class="btn sm" id="r_pdf">Gerar PDF</button><button class="btn sm alt" id="r_txt">Gerar TXT</button></div></div>
+ <div class="card form"><h3>Novo lançamento</h3><label>Tipo<select id="n_t"><option value="entrada">Entrada (recebimento)</option><option value="saida">Saída (despesa)</option></select></label><label>Cliente<select id="n_c">${cliOpts()}</select></label><label>Descrição<input id="n_d"></label><label>Valor (R$)<input id="n_v" type="number" step="0.01"></label><label>Data<input id="n_dt" type="date" value="${h}"></label><label><input id="n_p" type="checkbox" checked style="width:auto"> Já foi pago</label><p style="margin-top:12px"><button class="btn sm" id="n_ok">Lançar</button></p></div>
+ <h3 style="margin-top:24px">Devedoras</h3><div class="tbl">${tb(Object.values(dev).sort((a,b)=>b.v-a.v))}</div>
+ <div class="grid"><div><h3>Mais receita</h3><div class="tbl">${tb(rk.slice(0,5))}</div></div><div><h3>Menos receita</h3><div class="tbl">${tb(rk.slice(-5).reverse())}</div></div></div>
+ <h3>Movimentações</h3><div class="tbl"><table><tr><th>Data</th><th>Cliente</th><th>Descrição</th><th>Valor</th><th></th></tr>${L.map(l=>`<tr><td>${l.data.split('-').reverse().join('/')}</td><td>${esc(l.clientes?.nome)}</td><td>${esc(l.descricao)}</td><td class="${l.tipo=='entrada'?'pos':'neg'}">${l.tipo=='saida'?'-':''}${brl(l.valor)}</td><td>${l.pago?'pago':`<button class="btn sm" data-pay="${l.id}">Marcar pago</button>`} <button class="btn sm alt" data-x="${l.id}">Excluir</button></td></tr>`).join('')}</table></div>`;
+ grafico(L);$('#gp').onchange=()=>grafico(L);$('#r_pdf').onclick=()=>relatorio('pdf');$('#r_txt').onclick=()=>relatorio('txt');
+ $('#n_ok').onclick=async()=>{const v=+$('#n_v').value;if(!v)return alert('Informe o valor.');const{error}=await sb.from('lancamentos').insert({tipo:$('#n_t').value,cliente_id:$('#n_c').value||null,descricao:$('#n_d').value,valor:v,data:$('#n_dt').value,pago:$('#n_p').checked});error?alert(error.message):adminInit()};
+ $('#tab').onclick=async e=>{const b=e.target.dataset;if(b.pay){await sb.from('lancamentos').update({pago:true}).eq('id',b.pay);adminInit()}if(b.x&&confirm('Excluir lançamento?')){await sb.from('lancamentos').delete().eq('id',b.x);adminInit()}};
+}
+async function tOrc(){
+ const{data}=await sb.from('orcamentos').select('*,clientes(nome)').order('id',{ascending:false});
+ $('#tab').innerHTML=`<div class="card form"><h3>Novo orçamento</h3><label>Cliente<select id="o_c">${cliOpts()}</select></label><label>Descrição<input id="o_d" placeholder="Ex.: Progressiva cabelo longo"></label><label>Valor (R$)<input id="o_v" type="number" step="0.01"></label><p style="margin-top:12px"><button class="btn sm" id="o_ok">Criar orçamento</button></p></div>
+ <div class="tbl"><table><tr><th>Cliente</th><th>Descrição</th><th>Valor</th><th>Status</th><th></th></tr>${(data||[]).map(o=>`<tr><td>${esc(o.clientes?.nome)}</td><td>${esc(o.descricao)}</td><td>${brl(o.valor)}</td><td>${o.status}</td><td>${o.status=='aberto'?`<button class="btn sm" data-ok="${o.id}">Aprovar e lançar</button> <button class="btn sm alt" data-no="${o.id}">Recusar</button>`:''}</td></tr>`).join('')}</table></div>`;
+ $('#o_ok').onclick=async()=>{const v=+$('#o_v').value;if(!v||!$('#o_c').value)return alert('Escolha a cliente e o valor.');await sb.from('orcamentos').insert({cliente_id:$('#o_c').value,descricao:$('#o_d').value,valor:v});adminInit()};
+ $('#tab').onclick=async e=>{const b=e.target.dataset,o=(data||[]).find(x=>x.id==(b.ok||b.no));if(!o)return;
+  if(b.ok)await sb.from('lancamentos').insert({tipo:'entrada',cliente_id:o.cliente_id,descricao:o.descricao,valor:o.valor,pago:false});
+  await sb.from('orcamentos').update({status:b.ok?'aprovado':'recusado'}).eq('id',o.id);adminInit()};
+}
+</script>
+</body>
+</html>
