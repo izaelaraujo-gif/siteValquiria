@@ -90,7 +90,7 @@ th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left}th{ba
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
 <script>
-// 1) Cole aqui os dados do seu projeto Supabase (Project Settings > API)
+// 1) Cole aqui os dados do seu projeto Supabase! (Project Settings > API)
 const SB_URL='https://yslnkzogrvudczrsntyd.supabase.co', SB_KEY='sb_publishable_TUHgFqCc5Nqpd7FUWnrB_A_9aQaGAJZ';
 const ON=!SB_URL.startsWith('COLE'), sb=ON?supabase.createClient(SB_URL,SB_KEY):null;
 const $=s=>document.querySelector(s), brl=n=>(+n||0).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
